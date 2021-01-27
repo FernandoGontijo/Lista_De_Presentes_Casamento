@@ -30,12 +30,10 @@ public class ListaPresente {
     @Column(name="QUANTIDADE")
     private Integer quantidade;
 
-    @Column(name="IMAGEM")
-    private byte[] imagem;
-
     @Column(name="LINK", length = 2000)
     private String[] link;
 
-
+    @Column(name="ATIVO")
+    private Boolean ativo;
 
 }

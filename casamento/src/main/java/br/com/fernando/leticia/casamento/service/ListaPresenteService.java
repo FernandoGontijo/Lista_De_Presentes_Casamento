@@ -11,7 +11,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.dao.DataIntegrityViolationException;
 import org.springframework.stereotype.Service;
 
-import java.nio.charset.StandardCharsets;
 import java.util.List;
 import java.util.Optional;
 
@@ -63,8 +62,8 @@ public class ListaPresenteService {
         listaPresente.setDescricao(listaDTO.getDescricao());
         listaPresente.setValor(listaDTO.getValor());
         listaPresente.setQuantidade(listaDTO.getQuantidade());
-        listaPresente.setImagem(listaDTO.getImagem());
         listaPresente.setLink(listaDTO.getLink());
+        listaPresente.setAtivo(listaDTO.getAtivo());
 
         return listaPresente;
     }
@@ -85,11 +84,12 @@ public class ListaPresenteService {
         if(Validador.isNull(listaPresente.getQuantidade())){
             listaPresente.setQuantidade(0);
         }
-        if(Validador.isNull(listaPresente.getImagem())){
-            listaPresente.setImagem("null".getBytes(StandardCharsets.UTF_8));
-        }
+
         if(Validador.isNull(listaPresente.getLink())){
             listaPresente.setLink(linkFake);
+        }
+        if(Validador.isNull(listaPresente.getAtivo())){
+            listaPresente.setAtivo(true);
         }
 
         return listaPresente;
@@ -111,11 +111,11 @@ public class ListaPresenteService {
         if(Validador.isNotNull(lista.getQuantidade())){
             listaPresente.setQuantidade(lista.getQuantidade());
         }
-        if(Validador.isNotNull(lista.getImagem())){
-            listaPresente.setImagem(lista.getImagem());
-        }
         if(Validador.isNotNull(lista.getLink())){
             listaPresente.setLink(lista.getLink());
+        }
+        if(Validador.isNotNull(lista.getAtivo())){
+            listaPresente.setAtivo(lista.getAtivo());
         }
 
     }

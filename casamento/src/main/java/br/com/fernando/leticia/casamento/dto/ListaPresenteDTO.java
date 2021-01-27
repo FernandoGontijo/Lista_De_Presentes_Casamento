@@ -19,8 +19,8 @@ public class ListaPresenteDTO implements Serializable {
     private String descricao;
     private Double valor;
     private Integer quantidade;
-    private byte[] imagem;
     private String[] link;
+    private Boolean ativo;
 
 
     public ListaPresenteDTO(ListaPresente listaPresente){
@@ -29,8 +29,8 @@ public class ListaPresenteDTO implements Serializable {
         descricao = listaPresente.getDescricao();
         valor = listaPresente.getValor();
         quantidade = listaPresente.getQuantidade();
-        imagem = listaPresente.getImagem();
         link = listaPresente.getLink();
+        ativo = listaPresente.getAtivo();
     }
 
 }
