@@ -124,5 +124,8 @@
       }
     }
   },
-  "defaultProject": "casamento-web"
+  "defaultProject": "casamento-web",
+  "cli": {
+    "analytics": "58b226ab-5400-4c4c-84fb-b29a0aee204a"
+  }
 }
