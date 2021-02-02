@@ -1,0 +1,31 @@
+.container img {
+    max-width:100%;
+    max-height:100%;
+    overflow: hidden;
+}
+
+.texto {
+    padding-top: 30px ;
+    font-size: 30px;
+    margin-bottom: 1.5em;
+    line-height: 1.4em;
+    font-family: Fleurish;
+    text-align: justify;
+    color: chocolate;
+    
+}
+
+.texto-rodape {
+    padding: 30px;
+    font-size: 15px;
+    margin-bottom: 1.5em;
+    line-height: 1.4em;
+    font-family: Fleurish;
+    text-align: center;
+    color: white;
+    
+}
+
+.rodape {
+   background-color: dimgray;
+}

@@ -8,6 +8,7 @@ import { ListaPresenteComponent } from './views/lista-presente/lista-presente.co
 import { CerimoniaComponent } from './views/cerimonia/cerimonia.component';
 import { MensagensComponent } from './views/mensagens/mensagens.component';
 import { NossaHistoriaComponent } from './views/nossa-historia/nossa-historia.component';
+import { CountDownComponent } from './views/count-down/count-down.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { NossaHistoriaComponent } from './views/nossa-historia/nossa-historia.co
     ListaPresenteComponent,
     CerimoniaComponent,
     MensagensComponent,
-    NossaHistoriaComponent
+    NossaHistoriaComponent,
+    CountDownComponent
   ],
   imports: [
     BrowserModule,
